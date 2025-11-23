@@ -20,7 +20,7 @@
     <!-- 1. Header Transparent -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">MUSE.</a>
+            <a class="navbar-brand" href="#">AMORAL</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -42,16 +42,9 @@
     <!-- 2. Hero Section: VIDEO BACKGROUND -->
     <header class="hero-section d-flex align-items-center">
         <div class="video-overlay"></div>
-        <!-- Video nền nội bộ -->
         <video autoplay muted loop playsinline class="hero-bg" poster="assets/image/hero-poster.avif">
-            <source src="assets/video/hero-bg.mp4" type="video/mp4">
+            <source src="assets/video/video-ngang.mp4" type="video/mp4">
         </video>
-        <div class="container text-center text-white position-relative z-2">
-            <span class="hero-subtitle fst-italic animate-on-scroll">Bộ sưu tập Mùa Đông 2025</span>
-            <h1 class="hero-title display-3 my-3 animate-on-scroll delay-100">VẺ ĐẸP CỦA SỰ VĨNH CỬU</h1>
-            <p class="hero-desc mx-auto mb-4 animate-on-scroll delay-200">Mỗi món trang sức là một câu chuyện chưa kể. Hãy để Muse viết nên câu chuyện của bạn.</p>
-            <button class="btn btn-outline-light rounded-0 px-5 py-2 animate-on-scroll delay-300">KHÁM PHÁ NGAY</button>
-        </div>
     </header>
 
     <!-- 3. Trust Badges -->
@@ -216,19 +209,23 @@
     <section class="video-campaign-section py-5 bg-black">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-7 mb-4 mb-lg-0 animate-on-scroll">
-                    <div class="ratio ratio-16x9 shadow-lg border border-secondary">
-                        <!-- Video Campaign nội bộ -->
-                        <video controls class="rounded" poster="assets/image/campaign-poster.avif">
-                            <source src="assets/video/campaign.mp4" type="video/mp4">
+                <div class="col-lg-5 mb-4 mb-lg-0 animate-on-scroll">
+                    
+                    <!-- SỬA LỖI TẠI ĐÂY: Đổi tỷ lệ khung thành DỌC (Vertical) -->
+                    <!-- style="--bs-aspect-ratio: 125%;" tạo tỷ lệ 4:5 (Dọc vừa phải) -->
+                    <!-- Nếu muốn dọc dài như TikTok, hãy đổi 125% thành 177.78% -->
+                    <div class="ratio shadow-lg border border-secondary" style="--bs-aspect-ratio: 125%;">
+                        <video controls class="rounded w-100 h-100" style="object-fit: cover;">
+                            <source src="assets/video/video-doc.mp4" type="video/mp4">
+                            Trình duyệt của bạn không hỗ trợ video.
                         </video>
                     </div>
+
                 </div>
-                <div class="col-lg-5 ps-lg-5 text-white animate-on-scroll delay-200">
-                    <h6 class="text-warning text-uppercase letter-spacing-2">The Making Of</h6>
-                    <h2 class="display-5 font-serif my-3">Tinh Hoa Chế Tác</h2>
-                    <p class="text-white-50 lead">Chiêm ngưỡng quá trình 300 giờ làm việc tỉ mỉ để tạo nên chiếc nhẫn Signature Diamond.</p>
-                    <p class="text-white-50">Từng viên đá được tuyển chọn và đính kết thủ công bởi những nghệ nhân hàng đầu Ý.</p>
+                <div class="col-lg-7 ps-lg-5 text-white animate-on-scroll delay-200">
+                    <h2 class="text-warning text-uppercase letter-spacing-2">Bộ Sưu Tập Mới – Golden Whisper</h2>
+                    <!-- <h2 class="display-5 font-serif my-3">Bộ Sưu Tập Mới – Golden Whisper</h2> -->
+                    <p class="text-white-50 lead">Lấy cảm hứng từ ánh vàng mềm mại và đường cong tinh tế, Golden Whisper tôn vinh vẻ đẹp thanh lịch, hiện đại. Những món trang sức được chế tác từ vàng 18K và đá quý cao cấp.</p>
                     <button class="btn btn-outline-warning rounded-0 px-4 mt-3">Xem Chi Tiết</button>
                 </div>
             </div>
