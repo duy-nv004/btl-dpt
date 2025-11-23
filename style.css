@@ -1,0 +1,227 @@
+/* THEME: Dark Luxury & Modern Editorial */
+
+:root {
+    --primary-color: #000000;
+    --accent-color: #d4af37; /* Màu vàng sang trọng */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Manrope', sans-serif;
+    --card-height: 280px;
+}
+
+body {
+    font-family: var(--font-body);
+    color: #333;
+    overflow-x: hidden;
+}
+
+.font-serif { font-family: var(--font-heading); }
+.letter-spacing-2 { letter-spacing: 2px; }
+
+/* Navbar */
+.navbar {
+    transition: background 0.3s;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.8), transparent);
+}
+.navbar-brand { 
+    font-family: var(--font-heading); 
+    font-size: 1.8rem; 
+    letter-spacing: 3px; 
+    font-weight: 700; 
+}
+.nav-link { 
+    text-transform: uppercase; 
+    font-size: 0.8rem; 
+    letter-spacing: 1px; 
+    margin: 0 10px; 
+    font-weight: 600; 
+}
+
+/* Hero Section - VIDEO BACKGROUND */
+.hero-section { 
+    position: relative; 
+    height: 90vh; 
+    overflow: hidden; 
+}
+.hero-bg { 
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    min-width: 100%; 
+    min-height: 100%; 
+    width: auto; 
+    height: auto; 
+    z-index: 0; 
+    transform: translateX(-50%) translateY(-50%);
+    object-fit: cover;
+}
+.video-overlay { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    background: rgba(0,0,0,0.4); 
+    z-index: 1; 
+}
+.hero-title { 
+    font-family: var(--font-heading); 
+    letter-spacing: 2px; 
+}
+
+/* Trust Icons */
+.trust-item i { font-size: 2rem; color: var(--accent-color); }
+.trust-item h6 { font-weight: 700; margin-bottom: 5px; }
+
+/* Categories */
+.section-heading { 
+    font-family: var(--font-heading); 
+    font-style: italic; 
+    position: relative; 
+    display: inline-block; 
+}
+.section-heading::after { 
+    content: ''; 
+    display: block; 
+    width: 50px; 
+    height: 2px; 
+    background: var(--accent-color); 
+    margin: 10px auto 0; 
+}
+.cat-circle { 
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    margin: 0 auto; 
+    border: 2px solid transparent; 
+    transition: all 0.3s; 
+    position: relative; 
+}
+.cat-circle img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.5s; 
+}
+.col-4:hover .cat-circle { 
+    border-color: var(--accent-color); 
+    transform: translateY(-5px); 
+}
+.col-4:hover .cat-circle img { 
+    transform: scale(1.1); 
+}
+
+/* Flash Sale */
+.flash-sale-section { 
+    background-color: #111; 
+    background-image: url('https://www.transparenttextures.com/patterns/cubes.png'); 
+}
+.time-box { 
+    background: rgba(255,255,255,0.1); 
+    border: 1px solid rgba(255,255,255,0.2); 
+    padding: 10px 15px; 
+    border-radius: 4px; 
+    text-align: center; 
+    min-width: 80px; 
+}
+.product-card.dark-mode { 
+    background: transparent; 
+    border: none; 
+}
+.product-card.dark-mode .card-img-wrapper { 
+    height: var(--card-height); 
+    background: #222; 
+    position: relative; 
+    overflow: hidden; 
+}
+.product-card.dark-mode .product-img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    transition: transform 0.4s; 
+}
+.product-card.dark-mode:hover .product-img { 
+    transform: scale(1.05); 
+    opacity: 0.8; 
+}
+
+/* Video Campaign Section */
+.video-campaign-section { 
+    border-top: 1px solid #333; 
+    border-bottom: 1px solid #333; 
+}
+
+/* Story Section */
+.story-img-group { padding: 20px; }
+.main-img { border-radius: 0 !important; }
+.since-badge { 
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    background: var(--accent-color); 
+    color: #fff; 
+    padding: 15px 30px; 
+    font-family: var(--font-heading); 
+    font-size: 1.2rem; 
+    font-weight: 700; 
+}
+
+/* Wedding Section */
+.overlay-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.group-item:hover .overlay-hover { opacity: 1; }
+
+/* Styling Guide (Blog) */
+.blog-img { 
+    transition: transform 0.5s; 
+    width: 100%; 
+    height: 250px; 
+    object-fit: cover; 
+}
+.blog-card:hover .blog-img { transform: scale(1.1); }
+.blog-card h5 a:hover { color: var(--accent-color) !important; }
+
+/* Insta Feed */
+.insta-img {
+    height: 200px;
+    object-fit: cover;
+    filter: grayscale(20%);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.insta-img:hover {
+    filter: grayscale(0);
+    transform: scale(0.98);
+}
+
+/* Animations */
+.animate-on-scroll { 
+    opacity: 0; 
+    transform: translateY(30px); 
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out; 
+}
+.animate-on-scroll.visible { 
+    opacity: 1; 
+    transform: translateY(0); 
+}
+.delay-100 { transition-delay: 0.1s; }
+.delay-200 { transition-delay: 0.2s; }
+.delay-300 { transition-delay: 0.3s; }
+.delay-400 { transition-delay: 0.4s; }
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title { font-size: 2rem; }
+    .cat-circle { width: 80px; height: 80px; }
+    .card-img-wrapper { height: 200px; }
+    .insta-img { height: 120px; }
+    .wedding-banner img { height: 400px !important; }
+}

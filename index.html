@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MUSE - The Art of Jewelry</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+    <!-- CSS Riêng -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. Header Transparent -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">MUSE.</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Trang chủ</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Bộ sưu tập</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Cưới & Đính hôn</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Quà tặng</a></li>
+                </ul>
+                <div class="nav-icons text-white">
+                    <i class="fas fa-search mx-2"></i>
+                    <i class="fas fa-shopping-bag mx-2"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero Section: VIDEO BACKGROUND -->
+    <header class="hero-section d-flex align-items-center">
+        <div class="video-overlay"></div>
+        <!-- Video nền nội bộ -->
+        <video autoplay muted loop playsinline class="hero-bg" poster="assets/image/hero-poster.avif">
+            <source src="assets/video/hero-bg.mp4" type="video/mp4">
+        </video>
+        <div class="container text-center text-white position-relative z-2">
+            <span class="hero-subtitle fst-italic animate-on-scroll">Bộ sưu tập Mùa Đông 2024</span>
+            <h1 class="hero-title display-3 my-3 animate-on-scroll delay-100">VẺ ĐẸP CỦA SỰ VĨNH CỬU</h1>
+            <p class="hero-desc mx-auto mb-4 animate-on-scroll delay-200">Mỗi món trang sức là một câu chuyện chưa kể. Hãy để Muse viết nên câu chuyện của bạn.</p>
+            <button class="btn btn-outline-light rounded-0 px-5 py-2 animate-on-scroll delay-300">KHÁM PHÁ NGAY</button>
+        </div>
+    </header>
+
+    <!-- 3. Trust Badges -->
+    <section class="trust-section py-4 bg-light">
+        <div class="container">
+            <div class="row text-center g-4">
+                <div class="col-6 col-md-3 trust-item animate-on-scroll">
+                    <i class="fas fa-truck-fast mb-2"></i>
+                    <h6>Miễn phí vận chuyển</h6>
+                    <p class="small text-muted mb-0">Cho đơn từ 1 triệu</p>
+                </div>
+                <div class="col-6 col-md-3 trust-item animate-on-scroll delay-100">
+                    <i class="fas fa-gem mb-2"></i>
+                    <h6>Đá quý tự nhiên</h6>
+                    <p class="small text-muted mb-0">Kiểm định PNJ Lab</p>
+                </div>
+                <div class="col-6 col-md-3 trust-item animate-on-scroll delay-200">
+                    <i class="fas fa-box-open mb-2"></i>
+                    <h6>Đóng gói cao cấp</h6>
+                    <p class="small text-muted mb-0">Hộp quà sang trọng</p>
+                </div>
+                <div class="col-6 col-md-3 trust-item animate-on-scroll delay-300">
+                    <i class="fas fa-shield-alt mb-2"></i>
+                    <h6>Bảo hành trọn đời</h6>
+                    <p class="small text-muted mb-0">Làm sạch miễn phí</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Circular Categories -->
+    <section class="categories-section py-5">
+        <div class="container text-center">
+            <h2 class="section-heading mb-5 animate-on-scroll">Danh Mục Yêu Thích</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-4 col-md-2 animate-on-scroll">
+                    <div class="cat-circle">
+                        <img src="assets/image/cat-charms.avif" alt="Charms">
+                    </div>
+                    <h6 class="mt-3">Charms</h6>
+                </div>
+                <div class="col-4 col-md-2 animate-on-scroll delay-100">
+                    <div class="cat-circle">
+                        <img src="assets/image/cat-rings.avif" alt="Nhẫn">
+                    </div>
+                    <h6 class="mt-3">Nhẫn</h6>
+                </div>
+                <div class="col-4 col-md-2 animate-on-scroll delay-200">
+                    <div class="cat-circle">
+                        <img src="assets/image/cat-bracelets.avif" alt="Vòng tay">
+                    </div>
+                    <h6 class="mt-3">Vòng Tay</h6>
+                </div>
+                <div class="col-4 col-md-2 animate-on-scroll delay-300">
+                    <div class="cat-circle">
+                        <img src="assets/image/cat-earrings.avif" alt="Bông tai">
+                    </div>
+                    <h6 class="mt-3">Bông Tai</h6>
+                </div>
+                <div class="col-4 col-md-2 animate-on-scroll delay-400">
+                    <div class="cat-circle">
+                        <img src="assets/image/cat-necklaces.avif" alt="Dây chuyền">
+                    </div>
+                    <h6 class="mt-3">Dây Chuyền</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Flash Sale -->
+    <section class="flash-sale-section text-white py-5">
+        <div class="container">
+            <div class="row align-items-center mb-5 animate-on-scroll">
+                <div class="col-md-6">
+                    <span class="badge bg-danger mb-2">LIMITED EDITION</span>
+                    <h2 class="display-5 font-serif">Ưu Đãi Độc Quyền</h2>
+                    <p class="text-white-50">Cơ hội sở hữu bộ sưu tập Rose Gold với mức giá chưa từng có.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <div class="countdown-wrapper d-inline-flex gap-3">
+                        <div class="time-box">
+                            <span id="hours" class="h2 d-block mb-0">08</span>
+                            <span class="small text-white-50">Giờ</span>
+                        </div>
+                        <div class="time-box">
+                            <span id="minutes" class="h2 d-block mb-0">45</span>
+                            <span class="small text-white-50">Phút</span>
+                        </div>
+                        <div class="time-box">
+                            <span id="seconds" class="h2 d-block mb-0">12</span>
+                            <span class="small text-white-50">Giây</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Product 1 -->
+                <div class="col-6 col-md-3 animate-on-scroll">
+                    <div class="product-card dark-mode h-100">
+                        <div class="card-img-wrapper">
+                            <span class="badge bg-dark border border-light position-absolute top-0 start-0 m-2">-30%</span>
+                            <img src="assets/image/prod-bracelet.avif" class="product-img" alt="Lắc Tay">
+                        </div>
+                        <div class="card-body pt-3">
+                            <h6 class="product-title text-white">Lắc Tay Vàng Hồng 14K</h6>
+                            <div class="price">
+                                <span class="fw-bold text-warning">2.450.000đ</span>
+                                <span class="text-white-50 text-decoration-line-through small ms-2">3.500.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="col-6 col-md-3 animate-on-scroll delay-100">
+                    <div class="product-card dark-mode h-100">
+                        <div class="card-img-wrapper">
+                             <img src="assets/image/prod-ring.avif" class="product-img" alt="Nhẫn">
+                        </div>
+                        <div class="card-body pt-3">
+                            <h6 class="product-title text-white">Nhẫn Pandora Signature</h6>
+                            <div class="price">
+                                <span class="fw-bold text-warning">1.890.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="col-6 col-md-3 animate-on-scroll delay-200">
+                    <div class="product-card dark-mode h-100">
+                        <div class="card-img-wrapper">
+                             <img src="assets/image/prod-necklace.avif" class="product-img" alt="Dây Chuyền">
+                        </div>
+                        <div class="card-body pt-3">
+                            <h6 class="product-title text-white">Dây Chuyền Ánh Trăng</h6>
+                            <div class="price">
+                                <span class="fw-bold text-warning">4.200.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="col-6 col-md-3 animate-on-scroll delay-300">
+                    <div class="product-card dark-mode h-100">
+                        <div class="card-img-wrapper">
+                             <img src="assets/image/prod-earrings.avif" class="product-img" alt="Khuyên Tai">
+                        </div>
+                        <div class="card-body pt-3">
+                            <h6 class="product-title text-white">Khuyên Tai Ngọc Trai</h6>
+                            <div class="price">
+                                <span class="fw-bold text-warning">950.000đ</span>
+                                <span class="text-white-50 text-decoration-line-through small ms-2">1.200.000đ</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Video Campaign Section -->
+    <section class="video-campaign-section py-5 bg-black">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-4 mb-lg-0 animate-on-scroll">
+                    <div class="ratio ratio-16x9 shadow-lg border border-secondary">
+                        <!-- Video Campaign nội bộ -->
+                        <video controls class="rounded" poster="assets/image/campaign-poster.avif">
+                            <source src="assets/video/campaign.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="col-lg-5 ps-lg-5 text-white animate-on-scroll delay-200">
+                    <h6 class="text-warning text-uppercase letter-spacing-2">The Making Of</h6>
+                    <h2 class="display-5 font-serif my-3">Tinh Hoa Chế Tác</h2>
+                    <p class="text-white-50 lead">Chiêm ngưỡng quá trình 300 giờ làm việc tỉ mỉ để tạo nên chiếc nhẫn Signature Diamond.</p>
+                    <p class="text-white-50">Từng viên đá được tuyển chọn và đính kết thủ công bởi những nghệ nhân hàng đầu Ý.</p>
+                    <button class="btn btn-outline-warning rounded-0 px-4 mt-3">Xem Chi Tiết</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. Storytelling Section -->
+    <section class="story-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 animate-on-scroll">
+                    <div class="story-img-group position-relative">
+                        <img src="assets/image/story.avif" class="img-fluid rounded shadow-lg main-img" alt="Story">
+                        <div class="since-badge">EST. 1988</div>
+                    </div>
+                </div>
+                <div class="col-lg-6 ps-lg-5 animate-on-scroll delay-200">
+                    <span class="text-uppercase text-secondary letter-spacing-2">Về Chúng Tôi</span>
+                    <h2 class="display-6 font-serif my-3">Chế Tác Từ Đam Mê</h2>
+                    <p class="text-muted lead">Không chỉ là trang sức, đó là di sản. Chúng tôi kết hợp kỹ nghệ thủ công truyền thống với tư duy thiết kế hiện đại.</p>
+                    <p class="text-muted mb-4">Lấy cảm hứng từ những khoảnh khắc nhỏ bé nhưng vĩ đại trong cuộc sống (Greatness begins small), Muse mang đến những thiết kế tinh xảo để bạn tự tin tỏa sáng.</p>
+                    <a href="#" class="text-dark fw-bold text-decoration-none border-bottom border-dark pb-1">Đọc câu chuyện của Muse</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 8. Wedding Collection -->
+    <section class="wedding-collection py-5 bg-light">
+        <div class="container-fluid px-0">
+            <div class="row g-0 align-items-center">
+                <div class="col-lg-7 animate-on-scroll">
+                    <div class="wedding-banner position-relative">
+                        <img src="assets/image/wedding-banner.avif" class="w-100" style="height: 600px; object-fit: cover;" alt="Wedding">
+                        <div class="banner-content position-absolute top-50 start-50 translate-middle text-center text-white w-75 p-4" style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.5);">
+                            <h2 class="display-4 font-serif">Mùa Hạnh Phúc</h2>
+                            <p class="lead">Trao lời hẹn ước trăm năm với bộ sưu tập nhẫn cưới Eternity.</p>
+                            <button class="btn btn-light mt-3 px-4">Xem Bộ Sưu Tập</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="row g-0">
+                        <div class="col-6 position-relative group-item animate-on-scroll delay-100">
+                            <img src="assets/image/wedding-ring1.avif" class="w-100" style="height: 300px; object-fit: cover;" alt="Ring 1">
+                            <div class="overlay-hover d-flex align-items-center justify-content-center">
+                                <span class="text-white fw-bold">Nhẫn Cầu Hôn</span>
+                            </div>
+                        </div>
+                        <div class="col-6 position-relative group-item animate-on-scroll delay-200">
+                            <img src="assets/image/wedding-ring2.avif" class="w-100" style="height: 300px; object-fit: cover;" alt="Ring 2">
+                            <div class="overlay-hover d-flex align-items-center justify-content-center">
+                                <span class="text-white fw-bold">Nhẫn Cưới</span>
+                            </div>
+                        </div>
+                        <div class="col-6 position-relative group-item animate-on-scroll delay-300">
+                            <img src="assets/image/wedding-ring3.avif" class="w-100" style="height: 300px; object-fit: cover;" alt="Ring 3">
+                            <div class="overlay-hover d-flex align-items-center justify-content-center">
+                                <span class="text-white fw-bold">Bộ Trang Sức Cưới</span>
+                            </div>
+                        </div>
+                        <div class="col-6 bg-dark text-white d-flex align-items-center justify-content-center animate-on-scroll delay-400" style="height: 300px;">
+                            <div class="text-center p-3">
+                                <h4 class="font-serif text-warning">Đặt Lịch Tư Vấn</h4>
+                                <p class="small text-white-50">Tư vấn 1:1 tại phòng VIP</p>
+                                <a href="#" class="text-white text-decoration-underline">Đặt ngay &rarr;</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 9. Styling Guide -->
+    <section class="styling-guide py-5">
+        <div class="container">
+            <h2 class="section-heading text-center mb-5 animate-on-scroll">Styling Guide</h2>
+            <div class="row g-4">
+                <div class="col-md-4 animate-on-scroll">
+                    <div class="blog-card">
+                        <div class="overflow-hidden mb-3">
+                            <img src="assets/image/blog1.avif" class="img-fluid blog-img" alt="Blog 1">
+                        </div>
+                        <span class="text-uppercase small text-muted">Xu Hướng</span>
+                        <h5 class="mt-2 font-serif"><a href="#" class="text-dark text-decoration-none">Cách phối Layer dây chuyền sành điệu</a></h5>
+                        <p class="text-muted small">Bí quyết phối hợp độ dài và độ dày để tạo điểm nhấn.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-on-scroll delay-100">
+                    <div class="blog-card">
+                        <div class="overflow-hidden mb-3">
+                            <img src="assets/image/blog2.avif" class="img-fluid blog-img" alt="Blog 2">
+                        </div>
+                        <span class="text-uppercase small text-muted">Phong Cách</span>
+                        <h5 class="mt-2 font-serif"><a href="#" class="text-dark text-decoration-none">Trang sức công sở: Ít nhưng chất</a></h5>
+                        <p class="text-muted small">Những món phụ kiện nhỏ giúp nâng tầm bộ vest của bạn.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 animate-on-scroll delay-200">
+                    <div class="blog-card">
+                        <div class="overflow-hidden mb-3">
+                            <img src="assets/image/blog3.avif" class="img-fluid blog-img" alt="Blog 3">
+                        </div>
+                        <span class="text-uppercase small text-muted">Bảo Quản</span>
+                        <h5 class="mt-2 font-serif"><a href="#" class="text-dark text-decoration-none">Giữ độ sáng bóng cho bạc 925</a></h5>
+                        <p class="text-muted small">Mẹo nhỏ tại nhà giúp trang sức luôn như mới.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 10. Insta Feed -->
+    <section class="insta-feed py-5 bg-light">
+        <div class="container-fluid">
+            <div class="text-center mb-4 animate-on-scroll">
+                <i class="fab fa-instagram fa-2x mb-2"></i>
+                <h3 class="font-serif">@MuseJewelry</h3>
+                <p class="text-muted">Chia sẻ khoảnh khắc của bạn với hashtag #MuseOnYou</p>
+            </div>
+            <div class="row g-1 animate-on-scroll delay-100">
+                <div class="col-6 col-md-2">
+                    <img src="assets/image/insta1.avif" class="w-100 insta-img" alt="Insta 1">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="assets/image/insta2.avif" class="w-100 insta-img" alt="Insta 2">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="assets/image/insta3.avif" class="w-100 insta-img" alt="Insta 3">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="assets/image/insta4.avif" class="w-100 insta-img" alt="Insta 4">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="assets/image/insta5.avif" class="w-100 insta-img" alt="Insta 5">
+                </div>
+                <div class="col-6 col-md-2">
+                    <img src="assets/image/insta6.avif" class="w-100 insta-img" alt="Insta 6">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3 border-top border-secondary">
+        <div class="container">
+             <div class="row">
+                <div class="col-md-3 mb-4">
+                    <h4 class="navbar-brand mb-3">MUSE.</h4>
+                    <p class="text-white-50 small">Đánh thức vẻ đẹp tiềm ẩn bên trong bạn.</p>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase text-warning mb-3">Khám phá</h6>
+                    <ul class="list-unstyled small text-white-50">
+                        <li class="mb-2"><a href="#" class="text-reset text-decoration-none">Về chúng tôi</a></li>
+                        <li class="mb-2"><a href="#" class="text-reset text-decoration-none">Blog thời trang</a></li>
+                        <li class="mb-2"><a href="#" class="text-reset text-decoration-none">Tuyển dụng</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase text-warning mb-3">Hỗ trợ</h6>
+                    <ul class="list-unstyled small text-white-50">
+                        <li class="mb-2"><a href="#" class="text-reset text-decoration-none">Chính sách đổi trả</a></li>
+                        <li class="mb-2"><a href="#" class="text-reset text-decoration-none">Hướng dẫn đo size</a></li>
+                        <li class="mb-2"><a href="#" class="text-reset text-decoration-none">Bảo hành</a></li>
+                    </ul>
+                </div>
+                 <div class="col-md-3 mb-4">
+                    <h6 class="text-uppercase text-warning mb-3">Kết nối</h6>
+                    <div class="social-links">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center pt-4 border-top border-secondary text-white-50 small">
+                © 2024 Muse Jewelry. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Script Animation & Countdown -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // 1. SCROLL ANIMATION
+            const observerOptions = { root: null, rootMargin: '0px', threshold: 0.1 };
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+            document.querySelectorAll('.animate-on-scroll').forEach((el) => { observer.observe(el); });
+
+            // 2. COUNTDOWN TIMER LOGIC
+            let timeInSeconds = 1 * 3600 + 15 * 60 + 12; 
+
+            function updateTimer() {
+                const hours = Math.floor(timeInSeconds / 3600);
+                const minutes = Math.floor((timeInSeconds % 3600) / 60);
+                const seconds = timeInSeconds % 60;
+
+                const h = document.getElementById("hours");
+                const m = document.getElementById("minutes");
+                const s = document.getElementById("seconds");
+
+                if (h && m && s) {
+                    h.innerText = hours < 10 ? "0" + hours : hours;
+                    m.innerText = minutes < 10 ? "0" + minutes : minutes;
+                    s.innerText = seconds < 10 ? "0" + seconds : seconds;
+                }
+
+                if (timeInSeconds > 0) {
+                    timeInSeconds--;
+                } else {
+                    clearInterval(timerInterval); 
+                }
+            }
+
+            updateTimer();
+            const timerInterval = setInterval(updateTimer, 1000);
+        });
+    </script>
+</body>
+</html>
