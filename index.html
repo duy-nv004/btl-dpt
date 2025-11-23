@@ -42,9 +42,12 @@
     <!-- 2. Hero Section: VIDEO BACKGROUND -->
     <header class="hero-section d-flex align-items-center">
         <div class="video-overlay"></div>
-        <video autoplay muted loop playsinline class="hero-bg" >
+        <video id="heroVideo" autoplay muted loop playsinline class="hero-bg">
             <source src="assets/video/video-ngang.mp4" type="video/mp4">
         </video>
+        <button id="muteBtn" class="btn btn-outline-light rounded-circle position-absolute bottom-0 end-0 m-4 z-3 d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; background: rgba(0,0,0,0.5); border: 1px solid rgba(255,255,255,0.3);">
+            <i class="fas fa-volume-mute"></i>
+        </button>
     </header>
 
     <!-- 3. Trust Badges -->
@@ -59,7 +62,7 @@
                 <div class="col-6 col-md-3 trust-item animate-on-scroll delay-100">
                     <i class="fas fa-gem mb-2"></i>
                     <h6>Đá quý tự nhiên</h6>
-                    <p class="small text-muted mb-0">Kiểm định PNJ Lab</p>
+                    <p class="small text-muted mb-0">Kiểm định AMORAL Lab</p>
                 </div>
                 <div class="col-6 col-md-3 trust-item animate-on-scroll delay-200">
                     <i class="fas fa-box-open mb-2"></i>
@@ -247,7 +250,7 @@
                     <h2 class="display-6 font-serif my-3">Chế Tác Từ Đam Mê</h2>
                     <p class="text-muted lead">Không chỉ là trang sức, đó là di sản. Chúng tôi kết hợp kỹ nghệ thủ công truyền thống với tư duy thiết kế hiện đại.</p>
                     <p class="text-muted mb-4">Lấy cảm hứng từ những khoảnh khắc nhỏ bé nhưng vĩ đại trong cuộc sống (Greatness begins small), Muse mang đến những thiết kế tinh xảo để bạn tự tin tỏa sáng.</p>
-                    <a href="#" class="text-dark fw-bold text-decoration-none border-bottom border-dark pb-1">Đọc câu chuyện của Muse</a>
+                    <a href="#" class="text-dark fw-bold text-decoration-none border-bottom border-dark pb-1">Đọc câu chuyện của AMORAL</a>
                 </div>
             </div>
         </div>
@@ -344,8 +347,8 @@
         <div class="container-fluid">
             <div class="text-center mb-4 animate-on-scroll">
                 <i class="fab fa-instagram fa-2x mb-2"></i>
-                <h3 class="font-serif">@MuseJewelry</h3>
-                <p class="text-muted">Chia sẻ khoảnh khắc của bạn với hashtag #MuseOnYou</p>
+                <h3 class="font-serif">@AMORALJewelry</h3>
+                <p class="text-muted">Chia sẻ khoảnh khắc của bạn với hashtag #AMORALOnYou</p>
             </div>
             <div class="row g-1 animate-on-scroll delay-100">
                 <div class="col-6 col-md-2">
@@ -375,7 +378,7 @@
         <div class="container">
              <div class="row">
                 <div class="col-md-3 mb-4">
-                    <h4 class="navbar-brand mb-3">MUSE.</h4>
+                    <h4 class="navbar-brand mb-3">AMORAL</h4>
                     <p class="text-white-50 small">Đánh thức vẻ đẹp tiềm ẩn bên trong bạn.</p>
                 </div>
                 <div class="col-md-3 mb-4">
@@ -404,7 +407,7 @@
                 </div>
             </div>
             <div class="text-center pt-4 border-top border-secondary text-white-50 small">
-                © 2025 Muse Jewelry. All rights reserved.
+                © 2025 AMORAL Jewelry. All rights reserved.
             </div>
         </div>
     </footer>
@@ -454,6 +457,25 @@
 
             updateTimer();
             const timerInterval = setInterval(updateTimer, 1000);
+            const video = document.getElementById('heroVideo');
+            const muteBtn = document.getElementById('muteBtn');
+            const icon = muteBtn.querySelector('i');
+
+            if (video && muteBtn) {
+                muteBtn.addEventListener('click', function() {
+                    if (video.muted) {
+                        video.muted = false; // Bật tiếng
+                        icon.classList.remove('fa-volume-mute');
+                        icon.classList.add('fa-volume-up');
+                        muteBtn.style.background = "rgba(255,255,255,0.2)"; // Sáng lên chút khi bật
+                    } else {
+                        video.muted = true; // Tắt tiếng
+                        icon.classList.remove('fa-volume-up');
+                        icon.classList.add('fa-volume-mute');
+                        muteBtn.style.background = "rgba(0,0,0,0.5)";
+                    }
+                });
+            }
         });
     </script>
 </body>
